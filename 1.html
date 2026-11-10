@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CornHub - Nông Sản Việt & Thế Giới Bắp</title>
+    <style>
+        /* Reset căn bản */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background-color: #121212;
+            color: #ffffff;
+            line-height: 1.6;
+        }
+
+        /* Header & Logo */
+        header {
+            background-color: #000000;
+            padding: 15px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid #ff9900;
+        }
+
+        .logo {
+            font-size: 32px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+        }
+
+        .logo .corn {
+            color: #ffffff;
+            padding-right: 4px;
+        }
+
+        .logo .hub {
+            background-color: #ff9900;
+            color: #000000;
+            padding: 2px 8px;
+            border-radius: 4px;
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ff9900;
+        }
+
+        /* Banner Hero */
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1551754655-cd27e38d2076?q=80&w=1200') center/cover;
+            height: 350px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .hero h1 {
+            font-size: 42px;
+            color: #ff9900;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            max-width: 600px;
+            color: #dddddd;
+        }
+
+        /* Main Content */
+        .container {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .section-title {
+            font-size: 26px;
+            border-left: 5px solid #ff9900;
+            padding-left: 10px;
+            margin-bottom: 25px;
+        }
+
+        /* Grid hiển thị sản phẩm / thông tin bắp */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background-color: #1e1e1e;
+            border-radius: 8px;
+            overflow: hidden;
+            border: 1px solid #333;
+            transition: transform 0.3s, border-color 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: #ff9900;
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card-body {
+            padding: 20px;
+        }
+
+        .card-body h3 {
+            color: #ff9900;
+            margin-bottom: 10px;
+        }
+
+        .card-body p {
+            color: #aaa;
+            font-size: 14px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #000000;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+            border-top: 1px solid #333;
+            color: #777;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <a href="#" class="logo">
+            <span class="corn">Corn</span><span class="hub">Hub</span>
+        </a>
+        <nav>
+            <a href="#">Trang Chủ</a>
+            <a href="#">Giống Bắp</a>
+            <a href="#">Món Ngon</a>
+            <a href="#">Nông Sản Việt</a>
+        </nav>
+    </header>
+
+    <!-- Banner -->
+    <section class="hero">
+        <h1>Thế Giới Bắp & Nông Sản Chất Lượng Cao</h1>
+        <p>Nơi tập hợp những giống ngô ngọt nhất, vàng ươm nhất và các thông tin nông nghiệp đỉnh cao dành cho dân mê bắp!</p>
+    </section>
+
+    <!-- Nội dung chính -->
+    <div class="container">
+        <h2 class="section-title">Danh Mục Bắp Nổi Bật</h2>
+        
+        <div class="grid">
+            <!-- Card 1 -->
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1551754655-cd27e38d2076?q=80&w=500" alt="Bắp Mỹ Vàng">
+                <div class="card-body">
+                    <h3>Bắp Mỹ Ngọt (Sweet Corn)</h3>
+                    <p>Hạt vàng mọng nước, vị ngọt tự nhiên. Thích hợp làm món bắp luộc, bắp xào b
